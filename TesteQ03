@@ -1,0 +1,14 @@
+public class TesteQ03 {
+
+	public static void main(String[] args) {
+		Q03 test = new Q03();
+		test.leituraNumeros();
+		test.calculaEMostraMedia();
+		test.quatidadePositivos();
+		test.quatidadeNegativos();
+		test.percentagemNegativos();
+		test.percentagemPositivos();
+
+	}
+
+}
