@@ -1,0 +1,15 @@
+package aula08;
+
+import java.util.*;
+public class Q08 {
+	public void fatorialA() {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Digite um numero inteiro para saber seu fatorial: ");
+		a = input.nextInt();	
+		
+		for 
+	}
+
+}
