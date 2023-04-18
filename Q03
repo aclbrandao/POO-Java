@@ -8,12 +8,11 @@ import java.util.*;
 
 public class Q03 {
 	double n = 1.0;
-	double soma, media, percentualNegativos, percentualPositivos;
-	int cont, valorPositivo, valorNegativo;
+	double cont, soma, media, percentualNegativos, percentualPositivos;
+	int valorPositivo, valorNegativo;
 
 	public void leituraNumeros() {
 		Scanner input1 = new Scanner(System.in);
-		Scanner input2 = new Scanner(System.in);
 
 		while (n != 0) {
 			System.out.println("Insira um valor ou 0 (zero) para parar o programa: ");
@@ -23,12 +22,12 @@ public class Q03 {
 				break;
 			}
 			if (n >= 1) {
-				valorPositivo += 1;
+				valorPositivo++;
 			} else {
-				valorNegativo += 1;
+				valorNegativo++;// valorNegativo=ValorNegativo+1
 			}
 			soma += n;
-			cont += 1;
+			cont++;// conta=conta+1
 
 		}
 
@@ -49,18 +48,16 @@ public class Q03 {
 		System.out.println("Quatidade de valores negativos inseridos: " + valorNegativo);
 
 	}
-	
-	//não calcula :/
+
 	public void percentagemNegativos() {
 		percentualNegativos = valorNegativo / cont;
-		System.out.println("Percentual de números negativos: " + percentualNegativos);
+		System.out.println("Percentual de números negativos: " + (100 * percentualNegativos) + "%");
 
 	}
 
-	//não calcula :/
 	public void percentagemPositivos() {
 		percentualPositivos = valorPositivo / cont;
-		System.out.println(percentualPositivos);
+		System.out.println("Percentual de números positivos: " + (100 * percentualPositivos) + "%");
 
 	}
 
