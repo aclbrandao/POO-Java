@@ -1,0 +1,11 @@
+package aula08;
+
+public class TesteQ07 {
+
+	public static void main(String[] args) {
+		Q07 test = new Q07();
+		test.tabuadaN();
+
+	}
+
+}
