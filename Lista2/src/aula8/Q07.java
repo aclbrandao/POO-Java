@@ -1,0 +1,26 @@
+/*7. Implemente um programa que leia um valor para uma vari´avel N de 1 a 10 e calcule a tabuada de
+N. Mostre a tabuada na forma: 0 ∗ N = 0, 1 ∗ N = 1N, 2 ∗ N = 2N, · · · , 10 ∗ N = 10N.*/
+
+package aula8;
+
+import java.util.*;
+
+public class Q07 {
+	public void tabuadaN() {
+
+		int n, multiplicacao;
+
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Digite um valor de 1 a 10: ");
+		n = input.nextInt();
+
+		if (n > 0 && n <= 10) {
+			for (int i = 1; i <= 10; i++) {
+				multiplicacao = n * i;
+				System.out.println(n + " x " + i + " = " + multiplicacao);
+			}
+		}
+	}
+
+}
